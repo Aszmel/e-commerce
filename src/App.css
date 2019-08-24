@@ -17,3 +17,7 @@ html {
     background: transparent;
     /* make scrollbar transparent */
 }
+
+* {
+    box-sizing: border-box;
+}
