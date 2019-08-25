@@ -15,7 +15,7 @@ class SignUp extends Component {
     };
   }
 
-  handleSubmit = async even => {
+  handleSubmit = async event => {
     event.preventDefault();
     const { displayName, email, password, confirmPassword } = this.state;
     if (password !== confirmPassword) {
@@ -35,7 +35,7 @@ class SignUp extends Component {
         confirmPassword: ""
       });
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -86,8 +86,8 @@ class SignUp extends Component {
             label="Confirm Password"
             required
           />
+          <CustomButton type="submit">SIGN UP</CustomButton>
         </form>
-        <CustomButton type="submit">SIGN UP</CustomButton>
       </div>
     );
   }
