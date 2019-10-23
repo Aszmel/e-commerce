@@ -7,7 +7,7 @@ import "./CartDropdown.scss";
 const CartDropdown = () => {
   return (
     <div className="cart-dropdown">
-      <div className="cart-item">cart items for now text only... :)</div>
+      <div className="cart-item">hardcoded test only... :)</div>
       <CustomButton>GO TO CHECKOUT</CustomButton>
     </div>
   );
