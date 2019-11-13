@@ -12,7 +12,11 @@ const CheckoutItem = ({ cartItem, clearItem }) => {
         <img src={imageUrl} alt="item" />
       </div>
       <span className="name">{name}</span>
-      <span className="quantity">&lt;{quantity}&gt;</span>
+      <span className="quantity">
+        <div className="arrow">&lt;</div>
+        <span className="value">{quantity}</span>
+        <div className="arrow">&gt;</div>
+      </span>
       <span className="price">{price}</span>
       <span className="remove-button" onClick={() => clearItem(cartItem)}>
         &#10005;
